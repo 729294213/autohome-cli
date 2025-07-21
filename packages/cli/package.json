@@ -1,0 +1,29 @@
+{
+  "name": "@autohome/cli",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "types": "index.d.ts",
+  "bin": {
+    "autohome-cli-demo": "bin/autohome"
+  },
+  "files": [
+    "bin",
+    "src",
+    "index.ts"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@autohome/core": "workspace:*",
+    "@autohome/shared": "workspace:*",
+    "tsup": "8.2.4",
+    "typescript": "^5.8.3"
+  }
+}

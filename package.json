@@ -1,17 +1,33 @@
 {
-  "name": "autohome-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:es": "eslint",
-    "lint:ts": "tsc --noEmit",
-      "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+    "name": "autohome-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint:es": "eslint",
+        "lint:ts": "tsc --noEmit",
+        "prepare": "husky",
+        "commit": "git-cz",
+        "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-git"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md}": [
+            "prettier --write"
+        ]
+    },
     "devDependencies": {
         "@types/node": "22.2.0",
         "@types/jest": "29.5.12",

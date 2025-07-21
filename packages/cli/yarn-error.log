@@ -1,0 +1,64 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\zhangruochen\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  c:\Users\zhangruochen\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Enterprise Vault\EVClient\x64\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_361\bin;C:\Program Files\Java\jdk1.8.0_361\jre\bin;C:\Program Files\apache-maven-3.9.6\bin;C:\Program Files\apache-tomcat-8.5.99\bin;C:\Users\zhangruochen\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\zhangruochen\AppData\Local\Microsoft\WindowsApps;C:\Users\zhangruochen\AppData\Roaming\npm;C:\Users\zhangruochen\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\zhangruochen\AppData\Local\Android\Sdk\platform-tools;C:\Users\zhangruochen\AppData\Local\Android\Sdk\emulator;C:\Users\zhangruochen\AppData\Local\Android\Sdk\tools;C:\Users\zhangruochen\AppData\Local\Android\Sdk\tools\bin;;c:\Users\;C:\Users\zhangruochen\AppData\Local\Microsoft\WindowsApps;C:\Users\zhangruochen\AppData\Roaming\npm;C:\Users\zhangruochen\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\zhangruochen\AppData\Local\Android\Sdk\platform-tools;C:\Users\zhangruochen\AppData\Local\Android\Sdk\emulator;C:\Users\zhangruochen\AppData\Local\Android\Sdk\tools;C:\Users\zhangruochen\AppData\Local\Android\Sdk\tools\bin;D:\program\cursor\resources\app\bin;C:\Users\zhangruochen\WebstormProjects\miaoma\autohome-cli\node_modules\.bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.20.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@autohome%2fcore: Not found
+      at Request.params.callback [as _callback] (C:\Users\zhangruochen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
+      at Request.self.callback (C:\Users\zhangruochen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\zhangruochen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\zhangruochen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "@autohome/cli",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "module": "index.ts",
+    "types": "index.d.ts",
+    "bin": {
+      "autohome-cli-demo": "bin/autohome"
+    },
+    "files": [
+      "bin",
+      "src",
+      "index.ts"
+    ],
+    "scripts": {
+      "dev": "tsup --watch",
+      "build": "tsup"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "@autohome/core": "workspace:*",
+      "@autohome/shared": "workspace:*",
+      "tsup": "8.2.4",
+      "typescript": "^5.8.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

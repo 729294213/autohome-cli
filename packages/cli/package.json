@@ -1,8 +1,8 @@
 {
   "name": "@autohome/cli",
   "version": "1.0.0",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
   "types": "index.d.ts",
   "bin": {
     "autohome-cli-demo": "bin/autohome"
@@ -10,7 +10,7 @@
   "files": [
     "bin",
     "src",
-    "index.ts"
+      "src/index.ts"
   ],
   "scripts": {
     "dev": "tsup --watch",
@@ -21,9 +21,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@autohome/core": "workspace:*",
-    "@autohome/shared": "workspace:*",
     "tsup": "8.2.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+      "@types/prompts": "2.4.9",
+      "@types/fs-extra": "11.0.4",
+      "commander": "12.1.0",
+      "picocolors": "1.0.1",
+      "prompts": "2.4.2",
+      "consola": "3.2.3",
+      "giget": "1.2.3",
+      "ora": "8.0.1",
+      "fs-extra": "11.2.0"
   }
 }

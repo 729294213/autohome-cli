@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/user/bin/env node
 
+const runCli = require('../dist/index.js').runCli;
 
-require('../dist/index.js')
+runCli();

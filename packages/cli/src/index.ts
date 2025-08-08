@@ -11,6 +11,5 @@
 import { run } from './cli'
 
 export const runCli = () => {
-    console.log('Hello World! -----11122')
     run(process.argv)
 }

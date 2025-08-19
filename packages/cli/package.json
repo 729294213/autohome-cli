@@ -4,17 +4,19 @@
   "main": "src/index.ts",
   "module": "src/index.ts",
   "types": "index.d.ts",
-    "bin": {
-        "autohome-cli-demo": "bin/autohome"
+  "bin": {
+    "autohome": "bin/autohome",
+    "autohome-cli-demo": "bin/autohome"
   },
   "files": [
+    "dist",
     "bin",
-    "src",
-      "src/index.ts"
+    "templates"
   ],
   "scripts": {
     "dev": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "release": "pnpm build && npm publish"
   },
   "keywords": [],
   "author": "",

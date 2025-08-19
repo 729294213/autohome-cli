@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const { runCli } = require('@autohome/cli/dist/index.js');
+
+const userArgs = process.argv.slice(2);
+process.argv = [process.argv[0], 'autohome', 'create', ...userArgs];
+runCli(); 

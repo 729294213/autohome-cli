@@ -1,0 +1,20 @@
+{
+  "name": "create-autohome",
+  "version": "0.0.1",
+  "private": false,
+  "bin": {
+    "create-autohome": "bin/create-autohome"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "prepublishOnly": "node -e \"require('fs').accessSync('bin/create-autohome')\""
+  },
+  "dependencies": {
+    "@autohome/cli": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+} 

@@ -9,6 +9,8 @@
     "bin"
   ],
   "scripts": {
+    "build": "node -e \"console.log('skip build for create-autohome')\"",
+    "release": "npm publish",
     "prepublishOnly": "node -e \"require('fs').accessSync('bin/create-autohome')\""
   },
   "dependencies": {
